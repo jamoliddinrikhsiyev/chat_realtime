@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/normalize-css.css">
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Chatoo!</title>
+</head>
+
+<body>
+
+    <main>
+        <div class="container">
+            <aside class="sidebar">
+                <button class="burger_menu">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </button>
+            </aside>
+            <div class="chats">
+                <div class="search">
+                    <input type="search" class="search-input" placeholder="Search">
+                </div>
+
+                <ul class="chat-list">
+                    <li class="chat-item">
+                        <img src="/img/nature.jpg" height="2560" width="3840" alt="Profile Photo">
+                        <div class="chat-right">
+                            <h5 class="chat-name">Group</h5>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="chat-messages">
+                <ul class="messages-list">
+                    
+                </ul>
+                <div class="send_message">
+                	<form class="chat_form">
+                		<input class="input" placeholder="Message..." autocomplete="off" />
+                		<button class="btn" type="submit">Send</button>
+                	</form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/index.js"></script>
+</body>
+
+</html>

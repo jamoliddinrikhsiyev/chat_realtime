@@ -1,0 +1,226 @@
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+}
+
+ul, ol{
+    list-style: none;
+}
+
+a{
+    display: inline-block;
+}
+
+img{
+    width: 100%;
+}
+
+.container{
+    width: 1140px;
+    background: lightblue;
+    margin: 0 auto;
+    padding: 10px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-radius: 5px;
+    border: 1px solid rgba(245, 245, 245, 0.15);
+}
+
+
+main{   
+    padding: 10px 0;
+    background: url('../img/tinybirdgames_telegram_background_02.jpg');
+    height: 100%;
+}
+
+.chats{
+    height: 100%;
+    width: 24%;
+   
+}
+
+.sidebar{
+    width: 6%;  
+    height: 100%;
+}
+
+.burger_menu{
+    background: transparent;
+    border: none;
+    width: 100%;
+    height: 10%;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.burger_menu div{
+    height: 2px;
+    margin: 2px 0;  
+    background: #fff;
+    width: 27px;
+}
+
+.chat-messages{
+    width: 69%;
+    height: 100%;
+    background: whitesmoke;
+    border-radius: 5px;
+}
+
+.search{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search input{
+    width: 94%;
+    padding: 10px 13px;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    opacity: 0.6;
+    margin: 0;  
+}
+
+
+.chat-list{
+    width: 100%;
+    height: 90%;
+}
+.chat-item{
+    display: flex;
+    align-items: center;
+    height: 15%;
+    border-radius: 5px 10px;
+    cursor: pointer;
+    margin: 5px 0;
+    transition: 150ms;
+}
+
+.chat-item:hover{
+    background: rgba(243, 243, 243, 0.5);
+}
+
+.chat-item + .active{
+    background: whitesmoke;
+}
+
+.chat-item img{
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.chat-content{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 50%;
+}
+
+.chat-name{
+    margin-left: 10px;
+    font-size: 24px;
+}
+
+.chat-messages{
+    padding: 10px;
+}
+
+.messages-list{
+    display: flex;
+    flex-direction: column;
+    height: 550px;
+    overflow-y: scroll;
+}
+
+.message{
+    display: inline-flex;
+    max-width: 70%;
+    flex-direction: column;
+    margin: 5px 0;
+    border-radius: 7px;
+    padding: 7px 15px;
+    min-width: 20%;
+}
+
+.message p{
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+.user_message{
+    background:lightskyblue;
+    align-self: flex-start;
+    border-bottom-left-radius: 0;
+}
+
+.admin_message{
+    align-self: flex-end;
+    border-bottom-right-radius: 0;
+    background: lightgreen;
+}
+
+.user-name{
+    display: inline-block;
+    color: rgba(0, 0, 0, 0.4);
+    text-decoration: underline;
+    opacity: 0,5;
+}
+
+.message-time{
+    align-self: flex-end;
+    font-size: 12px;
+}
+
+.chat_form{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+}
+
+.send_message{
+    width: 100%;
+}
+
+.chat_form button{
+    display: inline-block;
+    width: 300px;
+    border:none;
+    background-color: aquamarine;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 20px;
+    outline: none;
+    margin-left: 5px;
+}
+
+.chat_form input{
+    display: inline-block;
+    outline: none;
+    border: none;
+    border:solid 2px rgba(0,0,0,0.3);
+    width: 95%;
+    border-radius: 5px;
+    padding-left: 10px;
+}
